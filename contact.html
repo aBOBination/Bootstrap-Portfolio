@@ -2,80 +2,84 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        />
+
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
         <title>Robert Marks</title>
     </head>
     <body>
-        <!-- Nav Bar -->
-        <header class="nav-container">
-            <nav class="nav">
-                <div class="nav-logo">
-                    <a class="nav-logo-link" href="index.html" target=""
-                        >Robert Marks</a
-                    >
-                </div>
-                <div class="nav-right">
-                    <a class="nav-link" href="index.html" target="">About </a>
-                    <span class="divider">|</span>
-                    <a class="nav-link" href="portfolio.html" target=""
-                        >Portfolio</a
-                    >
-                    <span class="divider">|</span>
-                    <a class="nav-link" href="contact.html" target=""
-                        >Contact</a
-                    >
+        <div class="container-fluid m-0 p-0">
+            <nav class="navbar navbar-inverse bg-dark navbar-dark mx-auto text-white-50">
+                <div class="container p-0 d-xs-block">
+                    <div class="navbar-header">
+                        <a class="navbar-brand text-white-50" href="#">Robert Marks</a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav navbar-right navbar-expand text-white-50">
+                            <li>
+                                <a href="index.html"><span class="About"></span>About</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html"
+                                    ><span class="Portfolio"></span>Portfolio</a
+                                >
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="Contact"></span>Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
-        </header>
-        <!-- About Me Section -->
-        <div class="about-me-container">
-            <div class="about-me">
-                <h1 class="about-name">Contact</h1>
-                <br />
-                <form class="form">
-                    <label class="form-name-label" for="name">Name:</label
-                    ><br />
-                    <input
-                        class="form-name-area"
-                        type="text"
-                        id="name"
-                        name="form-name"
-                    /><br /><br />
 
-                    <label class="form-email-label" for="email">Email:</label
-                    ><br />
-                    <input
-                        class="form-email-area"
-                        type="email"
-                        id="email"
-                        name="form-email"
-                    /><br /><br />
+            <main
+                class="container m-0 p-0 mt-xl-5 mt-lg-5 mt-md-5 mt-sm-5 mt-xs-0 mb-xl-5 mb-lg-5 mb-md-5 mb-sm-5 mb-xs-0 mx-auto"
+            >
+                <div class="card border border-primary">
+                    <div class="container p-2">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputName">Name</label>
+                                <input
+                                    type="name"
+                                    class="form-control"
+                                    id="exampleInputName"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Enter name"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Enter email"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                ></textarea>
+                            </div>
 
-                    <label class="form-message-label" for="message"
-                        >Message:</label
-                    ><br />
-                    <textarea
-                        class="form-message-area"
-                        name="message"
-                        rows="10"
-                        cols="30"
-                    ></textarea
-                    ><br /><br />
-                    <input
-                        class="form-button"
-                        type="button"
-                        class="button"
-                        value="Submit"
-                    />
-                </form>
-            </div>
-        </div>
-        <!-- Footer -->
-        <div class="footer">
-            <p class="copy">Copyright &copy</p>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer class="container-fluid bg-dark text-white-50">
+                <p class="m-0">Copywrite</p>
+            </footer>
         </div>
     </body>
 </html>

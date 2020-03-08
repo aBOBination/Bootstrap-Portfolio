@@ -3,19 +3,40 @@ body {
   background-color: green;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+main {
+  min-height: calc(100vh - 228px)
 }
 
 .about-image {
   max-width: 200px
 }
 
-@media only screen and (max-width: 768px) {
+footer {
+  position: relative;
+  bottom: -16px;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
+}
+li {
+  padding: 0 10px;
+}
+@media only screen and (max-width: 575px) {
   .d-xs-block {
     display: block !important;
   }
 
+  .navbar-header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+  .about-image {
+    max-width: 100%
+  }
 }

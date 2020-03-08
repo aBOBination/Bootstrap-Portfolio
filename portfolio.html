@@ -2,104 +2,176 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        />
+
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
         <title>Robert Marks</title>
     </head>
     <body>
-        <!-- Nav Bar -->
-        <header class="nav-container">
-            <nav class="nav">
-                <div class="nav-logo">
-                    <a class="nav-logo-link" href="index.html" target=""
-                        >Robert Marks</a
-                    >
-                </div>
-                <div class="nav-right">
-                    <a class="nav-link" href="index.html" target="">About </a>
-                    <span class="divider">|</span>
-                    <a class="nav-link" href="portfolio.html" target=""
-                        >Portfolio</a
-                    >
-                    <span class="divider">|</span>
-                    <a class="nav-link" href="contact.html" target=""
-                        >Contact</a
-                    >
+        <div class="container-fluid m-0 p-0">
+            <nav class="navbar navbar-inverse bg-dark navbar-dark mx-auto text-white-50">
+                <div class="container p-0 d-xs-block">
+                    <div class="navbar-header">
+                        <a class="navbar-brand text-white-50" href="#">Robert Marks</a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav navbar-right navbar-expand text-white-50">
+                            <li>
+                                <a href="index.html"><span class="About"></span>About</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html"
+                                    ><span class="Portfolio"></span>Portfolio</a
+                                >
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="Contact"></span>Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
-        </header>
-        <!-- About Me Section -->
-        <div class="about-me-container">
-            <div class="about-me">
-                <h1 class="about-name">Portfolio</h1>
-                <br />
-                <div class="images">
-                    <div class="image-container">
-                        <img
-                            class="portfolio-images"
-                            src="assets/images/game-night.jpg"
-                            alt=""
-                        />
-                        <a href=""
-                            ><div class="banner"><span>Hangman</span></div></a
-                        >
-                    </div>
-                    <div class="image-container">
-                        <img
-                            class="portfolio-images"
-                            src="assets/images/games-and-pizza.jpg"
-                            alt=""
-                        />
-                        <a href=""
-                            ><div class="banner"><span>RPG Game</span></div></a
-                        >
-                    </div>
-                    <div class="image-container">
-                        <img
-                            class="portfolio-images"
-                            src="assets/images/videogame-knoll.jpg"
-                            alt=""
-                        />
-                        <a href=""
-                            ><div class="banner">
-                                <span>Trivia Game</span>
-                            </div></a
-                        >
-                    </div>
 
-                    <div class="image-container">
-                        <img
-                            class="portfolio-images"
-                            src="assets/images/virtual-reality-goggles.jpg"
-                            alt=""
-                        />
-                        <a href=""
-                            ><div class="banner">
-                                <span>Rutgers Info Widget</span>
-                            </div></a
-                        >
-                    </div>
+            <main
+                class="container m-0 p-0 mt-xl-5 mt-lg-5 mt-md-5 mt-sm-5 mt-xs-0 mb-xl-5 mb-lg-5 mb-md-5 mb-sm-5 mb-xs-0 mx-auto"
+            >
+                <div class="about-me">
+                    <h1 class="about-name">Portfolio</h1>
+                    <br />
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="mdb-lightbox-ui"></div>
 
-                    <div class="image-container">
-                        <img
-                            class="portfolio-images"
-                            src="assets/images/stay-connected-flatlay.jpg"
-                            alt=""
-                        />
-                        <a href=""
-                            ><div class="banner">
-                                <span>Rock Paper Scissors</span>
-                            </div></a
-                        >
+                            <div class="mdb-lightbox">
+                                <figure class="col-md-4">
+                                    <a
+                                        href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(145).jpg"
+                                        data-size="1600x1067"
+                                    >
+                                        <img
+                                            alt="picture"
+                                            src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(145).jpg"
+                                            class="img-fluid"
+                                        />
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a
+                                        href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).jpg"
+                                        data-size="1600x1067"
+                                    >
+                                        <img
+                                            alt="picture"
+                                            src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(150).jpg"
+                                            class="img-fluid"
+                                        />
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a
+                                        href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(152).jpg"
+                                        data-size="1600x1067"
+                                    >
+                                        <img
+                                            alt="picture"
+                                            src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(152).jpg"
+                                            class="img-fluid"
+                                        />
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a
+                                        href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(42).jpg"
+                                        data-size="1600x1067"
+                                    >
+                                        <img
+                                            alt="picture"
+                                            src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(42).jpg"
+                                            class="img-fluid"
+                                        />
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a
+                                        href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(151).jpg"
+                                        data-size="1600x1067"
+                                    >
+                                        <img
+                                            alt="picture"
+                                            src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(151).jpg"
+                                            class="img-fluid"
+                                        />
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a
+                                        href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg"
+                                        data-size="1600x1067"
+                                    >
+                                        <img
+                                            alt="picture"
+                                            src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(40).jpg"
+                                            class="img-fluid"
+                                        />
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a
+                                        href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(148).jpg"
+                                        data-size="1600x1067"
+                                    >
+                                        <img
+                                            alt="picture"
+                                            src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(148).jpg"
+                                            class="img-fluid"
+                                        />
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a
+                                        href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(147).jpg"
+                                        data-size="1600x1067"
+                                    >
+                                        <img
+                                            alt="picture"
+                                            src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+                                            class="img-fluid"
+                                        />
+                                    </a>
+                                </figure>
+
+                                <figure class="col-md-4">
+                                    <a
+                                        href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(149).jpg"
+                                        data-size="1600x1067"
+                                    >
+                                        <img
+                                            alt="picture"
+                                            src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(149).jpg"
+                                            class="img-fluid"
+                                        />
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Footer -->
-        <div class="footer">
-            <p class="copy">Copyright &copy</p>
+            </main>
+            <footer class="container-fluid bg-dark text-white-50">
+                <p class="m-0">Copywrite</p>
+            </footer>
         </div>
     </body>
 </html>
