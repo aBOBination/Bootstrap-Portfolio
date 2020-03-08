@@ -2,3 +2,20 @@
 body {
   background-color: green;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.about-image {
+  max-width: 200px
+}
+
+@media only screen and (max-width: 768px) {
+  .d-xs-block {
+    display: block !important;
+  }
+
+}
